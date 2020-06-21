@@ -25,7 +25,6 @@ import net.spellcraftgaming.rpghud.gui.hud.HudVanilla;
 import net.spellcraftgaming.rpghud.settings.Settings;
 
 @Mod(modid = ModRPGHud.MOD_ID, version = ModRPGHud.VERSION, name = ModRPGHud.NAME, clientSideOnly = ModRPGHud.CLIENT_SIDE_ONLY, guiFactory = ModRPGHud.GUI_FACTORY, updateJSON = ModRPGHud.UPDATE_JSON)
-
 public class ModRPGHud {
 
 	/** The mod ID of this mod */
@@ -33,7 +32,7 @@ public class ModRPGHud {
 	/** The mod name of this mod */
 	public static final String NAME = "RPG-Hud";
 	/** The mod version of this mod */
-	public static final String VERSION = "3.6.8";
+	public static final String VERSION = "3.6.8.1";
 	/** Path to GuiFactory class of this mod */
 	public static final String GUI_FACTORY = "net.spellcraftgaming.lib.gui.GuiFactoryRPGHud";
 
@@ -58,7 +57,7 @@ public class ModRPGHud {
 
 	/**
 	 * The function to be run before the initialization
-	 * 
+	 *
 	 * @param event
 	 *            FMLPreInitializationEvent
 	 */
@@ -71,12 +70,12 @@ public class ModRPGHud {
 		this.registerHud(new HudFullTexture(Minecraft.getMinecraft(), "texture", "Full Texture"));
 		this.registerHud(new HudHotbarWidget(Minecraft.getMinecraft(), "hotbar", "Hotbar Widget"));
 		this.registerHud(new HudModern(Minecraft.getMinecraft(), "modern", "Modern Style"));
-		this.settings.initHudConfig();
+//		this.settings.initHudConfig();
 	}
 
 	/**
 	 * The function to be run with the initialization
-	 * 
+	 *
 	 * @param event
 	 *            FMLInitializationEvent
 	 */
@@ -92,7 +91,7 @@ public class ModRPGHud {
 
 	/**
 	 * The function to be run after the initialization
-	 * 
+	 *
 	 * @param event
 	 *            FMLPostInitializationEvent
 	 */
@@ -105,7 +104,7 @@ public class ModRPGHud {
 
 	/**
 	 * Register a new HUD
-	 * 
+	 *
 	 * @param hud
 	 *            the hud to be registered
 	 */

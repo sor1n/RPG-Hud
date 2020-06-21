@@ -48,6 +48,8 @@ public class Settings {
 	public static final String color_poison = "color_poison";
 	public static final String color_wither = "color_wither";
 	public static final String health_position = "health_position";
+	public static final String health_rotation = "health_rotation";
+	public static final String health_scale = "health_size";
 	public static final String mount_health_position = "mount_health_position";
 	public static final String mount_health_percentage = "mount_health_percentage";
 
@@ -147,6 +149,8 @@ public class Settings {
 		addSetting(color_poison, new SettingColor(color_poison, HudElementType.HEALTH, HudElement.COLOR_PURPLE));
 		addSetting(color_wither, new SettingColor(color_wither, HudElementType.HEALTH, HudElement.COLOR_BLACK));
 		addSetting(health_position, new SettingPosition(health_position, HudElementType.HEALTH, 0, 0));
+		addSetting(health_rotation, new SettingFloat(health_rotation, HudElementType.HEALTH, 0F, 0F, 360F, 1F));
+		addSetting(health_scale, new SettingFloat(health_scale, HudElementType.HEALTH, 1F, 0F, 5F, 0.1F));
 
 		addSetting(show_numbers_food, new SettingBoolean(show_numbers_food, HudElementType.FOOD, true));
 		addSetting(hunger_percentage, new SettingBoolean(hunger_percentage, HudElementType.FOOD, false));
